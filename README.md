@@ -5,6 +5,8 @@ Platform info for EMS sensor from Elsys
 
 [Product manual](https://elsys.se/public/manuals/Operating%20_Manual_EMS_Door.pdf)
 
+![Elsys EMS image](elsys_ems.jpg)
+
 ## Battery
 
 1x 3.6V Lithium AA
