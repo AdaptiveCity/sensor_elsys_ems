@@ -21,7 +21,12 @@ Access the [TTN console](https://console.thethingsnetwork.org/applications)
 
 Application **cambridge-sensor-network2**
 
-'Add devices' all the sensors of the same type you'll configure
+'Add devices' all the sensors of the same type you'll configure.
+
+Our standardised sensor 'id' format is <make>-<model>-<6-hex-digits>, e.g. `elsys-ems-0503e5` and typically the digits will be 
+the last 6 digits of the device `DEVEUI`. We don't *force* this naming standard, but it provides a hint to our `acp_decoders` framework
+to infer the data format and decode it and we have existing decoders for quite a few sensor types. You can always add a new decoder if
+you have a new/custom sensor.
 
 Use our cambridge-sensor-network standardized APPEUI (ends AB65) and APPKEY (ends 7394)
 
@@ -52,3 +57,10 @@ in the TTN console.
 Label the position of the REED switch.
 
 Add acp_id label.
+
+## See the data on the ACP Platform
+
+```
+ls -l /media/acp/mqtt_ttn/data_bin/YYYY/MM/DD/*ACPID*
+```
+Where `YYYY/MM/DD` is today, `ACPID` is e.g. `elsys-ems-0503e5`
