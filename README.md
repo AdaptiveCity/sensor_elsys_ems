@@ -1,5 +1,5 @@
 # sensor_elsys_ems
-Platform info for EMS sensor from Elsys
+Platform info for EMS sensor from Elsys. Has indoor temperature, humidity, acceleration, a water leak detector, and a reed switch.
 
 [Product homepage](https://www.elsys.se/shop/product/ems-door/)
 
